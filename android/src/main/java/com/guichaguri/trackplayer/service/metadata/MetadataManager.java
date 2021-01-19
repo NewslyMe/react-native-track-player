@@ -129,7 +129,7 @@ public class MetadataManager {
             nextAction = createAction(notification, PlaybackStateCompat.ACTION_SKIP_TO_NEXT, "Next",
                     getIcon(options, "nextIcon", R.drawable.next));
             stopAction = createAction(notification, PlaybackStateCompat.ACTION_STOP, "Stop",
-                    getIcon(options, "stopIcon", R.drawable.stop));
+                    getIcon(options, "stopIcon", R.drawable.close));
 
             // Update the action mask for the compact view
             if(compact != null) {
