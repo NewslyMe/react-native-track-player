@@ -242,9 +242,9 @@ public class MetadataManager {
             addAction(playAction, PlaybackStateCompat.ACTION_PLAY, compact);
         }
 
-        addAction(stopAction, PlaybackStateCompat.ACTION_STOP, compact);
         addAction(forwardAction, PlaybackStateCompat.ACTION_FAST_FORWARD, compact);
         addAction(nextAction, PlaybackStateCompat.ACTION_SKIP_TO_NEXT, compact);
+        addAction(stopAction, PlaybackStateCompat.ACTION_STOP, compact);
 
         // Prevent the media style from being used in older Huawei devices that don't support custom styles
         if(!Build.MANUFACTURER.toLowerCase().contains("huawei") || Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
